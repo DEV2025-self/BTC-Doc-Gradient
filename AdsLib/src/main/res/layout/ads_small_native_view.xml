@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#00FFFFFF">
+
+    <FrameLayout
+        android:id="@+id/linBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/adsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/ads_border_bg"
+                android:gravity="center"
+                android:text="Ads Loading..."
+                android:textColor="@color/adslib_loading_text_color"
+                android:textSize="18dp" />
+
+        </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/adsPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/fbAdsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ads_border_bg"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

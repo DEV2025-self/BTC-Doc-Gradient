@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        tools:context=".BDG_Activity.SafeDataInfo">
+
+        <RelativeLayout
+            android:id="@+id/layToolbarbdg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:id="@+id/btnbackbdg"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btnbackbg10_bg">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/titlebdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/inter_medium_500"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <WebView
+            android:id="@+id/webViewbdg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bannerAdViewbdg"
+            android:layout_below="@+id/layToolbarbdg"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/WebViewProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bannerAdViewbdg"
+            android:layout_below="@+id/layToolbarbdg"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:indeterminateTint="@color/app_color" />
+
+
+        <include
+            android:id="@+id/bannerAdViewbdg"
+            layout="@layout/ads_banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</layout>

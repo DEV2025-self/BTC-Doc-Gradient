@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        tools:context=".BDG_Activity.UserConsoleCenter">
+
+        <RelativeLayout
+            android:id="@+id/layToolbarbdg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:id="@+id/btnbackbdg"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btnbackbg10_bg">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/titlebdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/inter_medium_500"
+                android:gravity="center_horizontal"
+                android:text="Manage Profile"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bannerAdViewbdg"
+            android:layout_below="@+id/layToolbarbdg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="28dp">
+
+            <RelativeLayout
+                android:id="@+id/fristnamelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/FullNametext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular_400"
+                    android:includeFontPadding="false"
+                    android:text="Full Name"
+                    android:textColor="@color/app_color"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/FullNametext"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boxradius10_bg">
+
+                    <EditText
+                        android:id="@+id/FullNameedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="10dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_regular_400"
+                        android:gravity="center|start"
+                        android:hint="Enter Full Name"
+                        android:includeFontPadding="false"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/textcolor"
+                        android:textCursorDrawable="@drawable/cusor_color"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emaillay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fristnamelay"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/EmailID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular_400"
+                    android:includeFontPadding="false"
+                    android:text="Email ID"
+                    android:textColor="@color/app_color"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/EmailID"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boxradius10_bg">
+
+                    <TextView
+                        android:id="@+id/Emailidedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="10dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_regular_400"
+                        android:gravity="center|start"
+                        android:hint="Enter Email ID"
+                        android:includeFontPadding="false"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/textcolor"
+                        android:textCursorDrawable="@drawable/cusor_color"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/contrySpinnerInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emaillay"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/Country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_regular_400"
+                    android:includeFontPadding="false"
+                    android:text="Country"
+                    android:textColor="@color/app_color"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/countrylay"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_below="@+id/Country"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/boxradius10_bg">
+
+                    <TextView
+                        android:id="@+id/Countrytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="35dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeTextType="uniform"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_regular_400"
+                        android:gravity="center|start"
+                        android:hint="Enter Country"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/textcolor"
+                        android:textCursorDrawable="@drawable/cusor_color"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/ic_country" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contrySpinnerInput"
+                android:layout_marginTop="30dp">
+
+                <RelativeLayout
+                    android:id="@+id/btnUpdatebdg"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/allbtnradius100_bg">
+
+                    <TextView
+                        android:id="@+id/txtStartNow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:autoSizeMaxTextSize="18sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_semibold_600"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Update"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/loader"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/bannerAdViewbdg"
+            layout="@layout/ads_banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</layout>

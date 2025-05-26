@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        tools:context=".BDG_Activity.Fund">
+
+        <RelativeLayout
+            android:id="@+id/layToolbarbdg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:id="@+id/btnbackbdg"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btnbackbg10_bg">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/titlebdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/inter_medium_500"
+                android:gravity="center_horizontal"
+                android:text="My Wallet"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btnhistorybdg"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_history" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bannerAdViewbdg"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/layToolbarbdg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:layout_marginTop="26dp"
+                    android:background="@drawable/radius25_bg">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginHorizontal="14dp"
+                        android:layout_marginVertical="14dp"
+                        android:background="@drawable/wallet_bg">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="12dp"
+                            android:layout_toStartOf="@+id/imageView11">
+
+                            <TextView
+                                android:id="@+id/tvbdg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_medium_500"
+                                android:text="Your Current BTC"
+                                android:textColor="@color/textcolor1"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/txtCurrentBtcbdg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvbdg"
+                                android:autoSizeMaxTextSize="22sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="@font/inter_semibold_600"
+                                android:includeFontPadding="false"
+                                android:maxLines="1"
+                                android:text="0.00000000"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="75dp"
+                            android:layout_height="76dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/ic_walt" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="24dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/ellipse_blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:autoSizeMaxTextSize="14sp"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_regular_400"
+                        android:lineSpacingExtra="5dp"
+                        android:text="We accept Binance, Trust, Coinomi, Coinbase, and Metamask wallet for now."
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay2"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/WalletAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular_400"
+                        android:includeFontPadding="false"
+                        android:text="Wallet Address"
+                        android:textColor="@color/app_color"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_below="@+id/WalletAddress"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/boxradius10_bg">
+
+                        <EditText
+                            android:id="@+id/txtWalletAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="10dp"
+                            android:autoSizeMaxTextSize="14sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeTextType="uniform"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter_regular_400"
+                            android:gravity="center|start"
+                            android:hint="Enter Wallet Address"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/textcolor"
+                            android:textCursorDrawable="@drawable/cusor_color"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay3"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/Password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_regular_400"
+                        android:includeFontPadding="false"
+                        android:text="Withdrawal Amount"
+                        android:textColor="@color/app_color"
+                        android:textSize="14sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_below="@+id/Password"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/boxradius10_bg">
+
+                        <EditText
+                            android:id="@+id/txtMiningPoint"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="10dp"
+                            android:autoSizeMaxTextSize="14sp"
+                            android:autoSizeMinTextSize="5sp"
+                            android:autoSizeTextType="uniform"
+                            android:background="@null"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/inter_regular_400"
+                            android:gravity="center|start"
+                            android:hint="Enter Withdrawal Amount "
+                            android:includeFontPadding="false"
+                            android:inputType="numberDecimal"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/textcolor"
+                            android:textCursorDrawable="@drawable/cusor_color"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtMinimum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/inter_medium_500"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtMinimum"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp">
+
+                    <RelativeLayout
+                        android:id="@+id/btnwithdrawbdg"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/allbtnradius100_bg">
+
+                        <TextView
+                            android:id="@+id/txtStartNow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginHorizontal="20dp"
+                            android:autoSizeMaxTextSize="18sp"
+                            android:autoSizeMinTextSize="6sp"
+                            android:autoSizeTextType="uniform"
+                            android:fontFamily="@font/inter_semibold_600"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:text="Withdraw"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/loader"
+                        android:layout_width="70dp"
+                        android:layout_height="52dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/bannerAdViewbdg"
+            layout="@layout/ads_banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</layout>

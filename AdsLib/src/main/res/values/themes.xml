@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AllAdsLoad" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.AllAdsLoad" parent="Base.Theme.AllAdsLoad" />
+
+    <style name="AdsLibRatingBarApp" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/adslib_reting_bar_color</item>
+        <item name="colorControlActivated">@color/adslib_reting_bar_fill_color</item>
+    </style>
+
+    <!-- Rounded Progress Dialog-->
+    <style name="AdsLibRoundedProgressDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/ads_rounded_progress_dialog_bg</item>
+        <item name="android:textColor">@color/adslib_show_loading_dialog_text</item>
+        <item name="colorAccent">@color/adslib_show_loading_dialog_text</item>
+    </style>
+
+</resources>

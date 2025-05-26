@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "424919846652",
+    "project_id": "btc-doc",
+    "storage_bucket": "btc-doc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424919846652:android:16d759a2745bb78f081179",
+        "android_client_info": {
+          "package_name": "com.doc.gradient.bt.server.uses.ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZde_siLaZk77__GAKL1Bn_EoFIOGkq4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

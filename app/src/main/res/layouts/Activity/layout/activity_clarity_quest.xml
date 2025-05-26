@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        tools:context=".BDG_Activity.ClarityQuest">
+
+        <RelativeLayout
+            android:id="@+id/layToolbarbdg"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <RelativeLayout
+                android:id="@+id/btnbackbdg"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/btnbackbg10_bg">
+
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="12dp"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_back" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/titlebdg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/inter_medium_500"
+                android:gravity="center_horizontal"
+                android:text="FAQs"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bannerAdViewbdg"
+            android:layout_below="@+id/layToolbarbdg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/btnstartcomputing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/tttt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="How to start computing?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tttt"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/start_computing"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btncomputingwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnstartcomputing"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btncomputingworktext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="How computing work?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btncomputingworktext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/computing_work"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnreferafriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btncomputingwork"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnreferafriendtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Use of refer a friend?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnreferafriendtext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/refer_a_friend"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnmineBTC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnreferafriend"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnmineBTCtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="How long does it take to mine BTC?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnmineBTCtext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/mine_BTC"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnrealBitcoin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnmineBTC"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnrealBitcointext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:text="Are we mining real Bitcoin?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+
+                    <TextView
+                        android:id="@+id/des5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnrealBitcointext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/real_Bitcoin"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnpaidcontract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnrealBitcoin"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnpaidcontracttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="How long is the validity period of the\npaid contract?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnpaidcontracttext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/paid_contract"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnspendinganymoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnpaidcontract"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnspendinganymoneytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="Can I earn BTC without spending\nany money?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnspendinganymoneytext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/spending_any_money"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btndropsuddenly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnspendinganymoney"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btndropsuddenlytext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="Why did my total hash rate drop suddenly?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btndropsuddenlytext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/drop_suddenly"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnlightningnetwork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btndropsuddenly"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnlightningnetworktext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="About the lightning network"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnlightningnetworktext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/lightning_network"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btnAPRcalculated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnlightningnetwork"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/noborder_radius10_bg">
+
+                    <TextView
+                        android:id="@+id/btnAPRcalculatedtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="13.5dp"
+                        android:layout_marginStart="12dp"
+                        android:autoSizeMaxTextSize="12sp"
+                        android:autoSizeMinTextSize="6sp"
+                        android:autoSizeTextType="uniform"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:gravity="start|center"
+                        android:includeFontPadding="false"
+                        android:maxLines="2"
+                        android:text="How is the APR calculated?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="12dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="15.5dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_dropdown" />
+
+                    <TextView
+                        android:id="@+id/des10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnAPRcalculatedtext"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_marginTop="-6dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:includeFontPadding="false"
+                        android:lineSpacingExtra="1dp"
+                        android:text="@string/APR_calculated"
+                        android:textColor="@color/textcolor"
+                        android:textSize="10sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/bannerAdViewbdg"
+            layout="@layout/ads_banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible" />
+    </RelativeLayout>
+</layout>

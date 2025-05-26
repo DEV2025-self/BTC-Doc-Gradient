@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3000000">
+
+    <nl.dionsegijn.konfetti.KonfettiView
+        android:id="@+id/viewKonfetti"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialogbox_bg">
+
+        <RelativeLayout
+            android:id="@+id/laybg"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/radius14_bg">
+
+            <TextView
+                android:id="@+id/idtxtTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/inter_semibold_600"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="88dp"
+                android:layout_height="87dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/dialog_icon_bg">
+
+                <ImageView
+                    android:id="@+id/idimgDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/descriptionOfuniversal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laybg"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/inter_medium_500"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="5"
+            android:text=""
+            android:textColor="@color/textcolor"
+            android:textSize="13sp" />
+
+
+        <RelativeLayout
+            android:id="@+id/tvPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionOfuniversal"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="14dp"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/btnCheck"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/checkbox"
+                android:backgroundTint="@color/transparent_color"
+                android:backgroundTintMode="src_atop"
+                android:button="@drawable/checkbox"
+                android:buttonTint="@color/transparent_color"
+                android:includeFontPadding="false"
+                android:paddingStart="0dp" />
+
+            <TextView
+                android:id="@+id/textview_description2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/btnCheck"
+                android:fontFamily="@font/inter_medium_500"
+                android:lineSpacingExtra="1dp"
+                android:maxLines="3"
+                android:text="Verify that this is your intended action, as your account cannot be recovered once deleted."
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layDelete"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/tvPolicy"
+            android:layout_alignParentEnd="true"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/nathijavu"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/startbtn_bg"
+                android:fontFamily="@font/inter_semibold_600"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="No"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/chaloaagal"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="20sp"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeTextType="uniform"
+                android:background="@drawable/dialogbtn112_bg"
+                android:fontFamily="@font/inter_semibold_600"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/DeletionPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layDelete"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/inter_regular_400"
+            android:text="@string/Deletion_Policy"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

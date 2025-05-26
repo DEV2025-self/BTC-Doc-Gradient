@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Native Ads -->
+    <color name="adslib_native_ads_main_background">#ffffff</color>
+    <color name="adslib_native_ads_text_color">#ffffff</color>
+    <color name="adslib_native_ads_text_color_secondary">#4C4C4C</color>
+
+    <!-- Google Ratting Bar -->
+    <color name="adslib_reting_bar_color">#B1ACAC</color>
+    <color name="adslib_reting_bar_fill_color">#FFB438</color>
+
+    <!--Button -->
+    <color name="adslib_native_ads_button_background">#28CB19</color>
+    <color name="adslib_native_ads_button_text_color">#000000</color>
+
+    <!-- LoadingAds -->
+    <color name="adslib_loading_background">#353535</color>
+    <color name="adslib_loading_text_color">#ffffff</color>
+
+    <!-- ShowLoadingDialogAds -->
+    <color name="adslib_show_loading_dialog_background">#FFFFFF</color>
+    <color name="adslib_show_loading_dialog_text">#000000</color>
+
+    <!-- Qureka -->
+    <color name="adslib_qureka_playgame_button_bg_color">#FBB428</color>
+    <color name="adslib_qureka_playgame_button_text_color">#000000</color>
+    <color name="adslib_qureka_close_button_stroke_color">#000000</color>
+    <color name="adslib_qureka_close_button_text_color">#000000</color>
+    <color name="adslib_qureka_close_button_background_color">#ffffff</color>
+    <color name="adslib_black_70_per">#4C000000</color>
+    <color name="selected_color">#76D34F</color>
+
+</resources>

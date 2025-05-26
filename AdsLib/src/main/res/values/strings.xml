@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">All Ads Load</string>
+    <!-- Admob -->
+    <string name="Adslib_AdsLib_admob_Install">Install</string>
+    <!--AppLovin-->
+    <string name="AdsLib_SDK_KEY_HERE">qnwo0uBp6ueBlptm_xMDHOlpJfuPXC-mZTW6PC-m5Ur7Z15TkzbPqhPC7NCq1hduiOCwZXEpswvDm0ToCqMi8N</string>
+
+
+    <!--Qureka Ads Text-->
+    <string name="AdsLib_qureka_Install">Play Now</string>
+
+    <string name="AdsLib_interstitialAds_tvTitle">Play &amp; Win Coins Daily</string>
+    <string name="AdsLib_interstitialAds_top_tvDescription">Play Quiz &amp; Win Up to 50,000 Coins</string>
+    <string name="AdsLib_interstitialAds_bottom_Description">Mega prize pool for right predication off Bitcoin Market Quiz</string>
+
+    <string name="AdsLib_AppOpenAds_tvTitle">Play &amp; Win Coins Daily</string>
+    <string name="AdsLib_AppOpenAds_top_tvDescription">Play Quiz &amp; Win Up to 50,000 Coins</string>
+    <string name="AdsLib_AppOpenAds_bottom_Description">Mega prize pool for right predication off Bitcoin Market Quiz</string>
+
+    <string name="AdsLib_largeNativeAds_tvTitle">Play &amp; Win Coins Daily</string>
+    <string name="AdsLib_largeNativeAds_tvDescription">Play Quiz &amp; Win Up to 50,000 Coins</string>
+
+    <string name="AdsLib_smallNativeAds_tvTitle">Play &amp; Win Coins Daily</string>
+    <string name="AdsLib_smallNativeAds_tvDescription">Play Quiz &amp; Win Up to 50,000 Coins</string>
+
+    <string name="AdsLib_rectangle_tvTitle">Play &amp; Win Coins Daily</string>
+    <string name="AdsLib_rectangle_tvDescription">Play Quiz &amp; Win Up to 50,000 Coins</string>
+
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="adslib_banner_height">50dp</dimen>
+    <dimen name="adslib_card_corner_radius">8dp</dimen>
+    <dimen name="adslib_card_elevation">3dp</dimen>
+    <dimen name="adslib_loading_Ads_background_radius">12dp</dimen>
+    <dimen name="adslib_button_radius">8dp</dimen>
+    <dimen name="adslib_qureka_button_radius">7dp</dimen>
+
+</resources>

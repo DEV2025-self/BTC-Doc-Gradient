@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRelative"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:background="@color/transparent_color">
+
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/boxradius10_bg">
+
+          <ImageView
+              android:layout_width="100dp"
+              android:layout_height="68dp"
+              android:layout_alignParentEnd="true"
+              android:background="@drawable/plan_gradientimg" />
+
+          <com.google.android.material.imageview.ShapeableImageView
+              android:id="@+id/imgplanbdg"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="12dp"
+              android:scaleType="centerCrop"
+              app:shapeAppearanceOverlay="@style/smallredisuImageview"
+              />
+
+          <RelativeLayout
+              android:id="@+id/linearSpeed"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/imgplanbdg"
+              android:layout_centerHorizontal="true"
+              android:layout_marginHorizontal="6dp"
+              android:layout_marginTop="16dp">
+
+              <TextView
+                  android:id="@+id/txtPlanPricebdg"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:fontFamily="@font/inter_bold_700"
+                  android:gravity="center"
+                  android:text="20 USD"
+                  android:textAllCaps="true"
+                  android:textColor="@color/app_color"
+                  android:textSize="22sp" />
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:id="@+id/linearSpeed0"
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_below="@+id/linearSpeed"
+              android:layout_marginHorizontal="12sp"
+              android:layout_marginTop="13dp"
+              android:layout_marginBottom="12dp"
+              android:background="@drawable/allbtnradius100_bg">
+
+              <TextView
+                  android:id="@+id/txtPlanNamebdg"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:fontFamily="@font/inter_semibold_600"
+                  android:text=""
+                  android:textColor="@color/black"
+                  android:textSize="18sp" />
+
+          </RelativeLayout>
+
+      </RelativeLayout>
+
+</RelativeLayout>

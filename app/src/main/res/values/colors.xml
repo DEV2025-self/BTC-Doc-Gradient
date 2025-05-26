@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#0D0D0D</color>
+    <color name="app_color">#80E761</color>
+    <color name="textcolor">#787878</color>
+    <color name="textcolor1">#304F36</color>
+    <color name="line">#282828</color>
+
+    <color name="green">#5CDA3D</color>
+    <color name="red">#FF0000</color>
+    <color name="transparent_color">#00ffffff</color>
+    <color name="transparent_color50">#32000000</color>
+
+    <!--purchase dialog-->
+    <color name="color_1">#904CC2D9</color>
+    <color name="color_2">#90FEC75C</color>
+    <color name="color_3">#9094638B</color>
+    <color name="color_4">#90F26544</color>
+</resources>

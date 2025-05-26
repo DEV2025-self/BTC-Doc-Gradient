@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        tools:context=".BDG_Activity.SecureSignUp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/welcomeback"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/letterimg"
+                            android:layout_width="45dp"
+                            android:layout_height="42dp"
+                            android:src="@drawable/letter" />
+
+                        <RelativeLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/letterimg"
+                            android:layout_marginTop="12dp">
+
+                            <TextView
+                                android:id="@+id/register"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autoSizeMaxTextSize="24sp"
+                                android:autoSizeMinTextSize="5sp"
+                                android:autoSizeTextType="uniform"
+                                android:fontFamily="@font/inter_bold_700"
+                                android:includeFontPadding="false"
+                                android:text="REGISTER"
+                                android:textColor="@color/white"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/signinyourac"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/register"
+                                android:fontFamily="@font/inter_medium_500"
+                                android:includeFontPadding="false"
+                                android:text="Hello! let’s join with us"
+                                android:textColor="@color/textcolor"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/lay_check1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/loginBtnLayout"
+                    android:layout_below="@+id/welcomeback"
+                    android:layout_marginBottom="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:id="@+id/fristnamelay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/FullNametext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="Full Name"
+                                android:textColor="@color/app_color"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_below="@+id/FullNametext"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/boxradius10_bg">
+
+                                <EditText
+                                    android:id="@+id/FullNameedittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeMinTextSize="5sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/inter_regular_400"
+                                    android:gravity="center|start"
+                                    android:hint="Enter Full Name"
+                                    android:includeFontPadding="false"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/textcolor"
+                                    android:textCursorDrawable="@drawable/cusor_color"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/emaillay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fristnamelay"
+                            android:layout_marginTop="16dp">
+
+                            <TextView
+                                android:id="@+id/EmailID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="Email ID"
+                                android:textColor="@color/app_color"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_below="@+id/EmailID"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/boxradius10_bg">
+
+                                <EditText
+                                    android:id="@+id/Emailidedittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeMinTextSize="5sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/inter_regular_400"
+                                    android:gravity="center|start"
+                                    android:hint="Enter Email ID"
+                                    android:includeFontPadding="false"
+                                    android:inputType="textEmailAddress"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/textcolor"
+                                    android:textCursorDrawable="@drawable/cusor_color"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/contrySpinnerInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/emaillay"
+                            android:layout_marginTop="16dp">
+
+                            <TextView
+                                android:id="@+id/Country"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="Country"
+                                android:textColor="@color/app_color"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/countrylay"
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_below="@+id/Country"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/boxradius10_bg">
+
+                                <TextView
+                                    android:id="@+id/Countrytext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="35dp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeMinTextSize="5sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/inter_regular_400"
+                                    android:gravity="center|start"
+                                    android:hint="Enter Country"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/textcolor"
+                                    android:textCursorDrawable="@drawable/cusor_color"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="16dp"
+                                    android:src="@drawable/ic_country" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/passwordInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/contrySpinnerInput"
+                            android:layout_marginTop="16dp">
+
+                            <TextView
+                                android:id="@+id/Password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="Password"
+                                android:textColor="@color/app_color"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_below="@+id/Password"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/boxradius10_bg">
+
+                                <EditText
+                                    android:id="@+id/Passwordedittext"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_toStartOf="@+id/closeeyepassword"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeMinTextSize="5sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/inter_regular_400"
+                                    android:gravity="center|start"
+                                    android:hint="Enter Password"
+                                    android:includeFontPadding="false"
+                                    android:inputType="textPassword"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/textcolor"
+                                    android:textCursorDrawable="@drawable/cusor_color"
+                                    android:textSize="14sp" />
+
+
+                                <ImageView
+                                    android:id="@+id/closeeyepassword"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="16dp"
+                                    android:src="@drawable/ic_eye_slash" />
+
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ConfirmpasswordInputlay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/passwordInput"
+                            android:layout_marginTop="16dp">
+
+                            <TextView
+                                android:id="@+id/ConfirmPassword"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="Confirm Password"
+                                android:textColor="@color/app_color"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_below="@+id/ConfirmPassword"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/boxradius10_bg">
+
+                                <EditText
+                                    android:id="@+id/ConfirmpasswordInput"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_toStartOf="@+id/iceyeconfirmpass"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeMinTextSize="5sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/inter_regular_400"
+                                    android:gravity="center|start"
+                                    android:hint="Enter Confirm Password"
+                                    android:includeFontPadding="false"
+                                    android:inputType="textPassword"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/textcolor"
+                                    android:textCursorDrawable="@drawable/cusor_color"
+                                    android:textSize="14sp" />
+
+                                <ImageView
+                                    android:id="@+id/iceyeconfirmpass"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="16dp"
+                                    android:src="@drawable/ic_eye_slash" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/ReferralCodelay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ConfirmpasswordInputlay"
+                            android:layout_marginTop="16dp">
+
+                            <TextView
+                                android:id="@+id/ReferralCodetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="Referral Code"
+                                android:textColor="@color/app_color"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="46dp"
+                                android:layout_below="@+id/ReferralCodetext"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/boxradius10_bg">
+
+                                <EditText
+                                    android:id="@+id/ReferralCodeInput"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="35dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:autoSizeMaxTextSize="14sp"
+                                    android:autoSizeMinTextSize="5sp"
+                                    android:autoSizeTextType="uniform"
+                                    android:background="@null"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/inter_regular_400"
+                                    android:gravity="center|start"
+                                    android:hint="Enter Referral Code (Optional)"
+                                    android:includeFontPadding="false"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/white"
+                                    android:textColorHint="@color/textcolor"
+                                    android:textCursorDrawable="@drawable/cusor_color"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/lay_check"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ReferralCodelay"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <CheckBox
+                                android:id="@+id/btnCheck"
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_marginStart="2dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginEnd="4dp"
+                                android:layout_marginBottom="0dp"
+                                android:background="@drawable/checkbox"
+                                android:backgroundTint="@color/transparent_color"
+                                android:backgroundTintMode="src_atop"
+                                android:button="@drawable/checkbox"
+                                android:buttonTint="@color/transparent_color"
+                                android:includeFontPadding="false"
+                                android:paddingStart="0dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text=" agree to the "
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/privacypolicy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="@string/privacy_policy"
+                                android:textColor="#88E421"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text=" and "
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/termconditions"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_regular_400"
+                                android:includeFontPadding="false"
+                                android:text="@string/term_amp_conditions"
+                                android:textColor="@color/app_color"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <RelativeLayout
+                    android:id="@+id/loginBtnLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/linearLayout4"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="visible">
+
+
+                    <RelativeLayout
+                        android:id="@+id/btnsignup"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/allbtnradius100_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/inter_semibold_600"
+                            android:includeFontPadding="false"
+                            android:text="Sign Up"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/loader"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text="Already have an account?"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/textSignin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="1dp"
+                        android:fontFamily="@font/inter_medium_500"
+                        android:text=" Sign In"
+                        android:textColor="@color/app_color"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
